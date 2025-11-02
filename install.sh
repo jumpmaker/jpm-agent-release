@@ -181,6 +181,12 @@ install_from_archive() {
         run_with_prefix "$sudo_cfg" install -Dm644 "$staging/config-example.yaml" "$CONFIG_DIR/config-example.yaml"
     fi
     
+    # 创建 logs 目录
+    LOGS_DIR="${INSTALL_DIR}/logs"
+    run_with_prefix "$sudo_cfg" mkdir -p "$LOGS_DIR"
+    run_with_prefix "$sudo_cfg" chmod 755 "$LOGS_DIR"
+    echo "已创建日志目录 $LOGS_DIR"
+    
     # 安装 systemd service 文件
     install_systemd_service
 }
