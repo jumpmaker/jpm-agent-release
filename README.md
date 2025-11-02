@@ -17,7 +17,7 @@ JPM-Agent 是一个用于监控系统指标和 Supervisor 进程的代理服务�
 使用 curl 直接从远程安装脚本安装：
 
 ```bash
-curl -fsSL https://github.com/jumpmaker/jpm-agent-release/raw/main/scripts/remote-install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/jumpmaker/jpm-agent-release/refs/heads/main/install.sh | sh
 ```
 
 此命令会：
@@ -30,7 +30,7 @@ curl -fsSL https://github.com/jumpmaker/jpm-agent-release/raw/main/scripts/remot
 ```bash
 export INSTALL_DIR=/opt/jpm-agent
 export CONFIG_DIR=/opt/jpm-agent
-curl -fsSL https://github.com/jumpmaker/jpm-agent-release/raw/main/scripts/remote-install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/jumpmaker/jpm-agent-release/refs/heads/main/install.sh | sh
 ```
 
 ### 方式二：下载安装包手动安装
